@@ -3,7 +3,7 @@
 [ext_resource path="res://Player/hero-sprites/2 Owlet_Monster/Owlet_Monster_Idle_4.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://Player/hero-sprites/2 Owlet_Monster/Owlet_Monster_Run_6.png" type="Texture" id=3]
-[ext_resource path="res://Player/DustRun.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Player/DustRun/DustRun.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Player/hero-sprites/2 Owlet_Monster/Owlet_Monster_Jump_8.png" type="Texture" id=7]
 [ext_resource path="res://Player/hero-sprites/2 Owlet_Monster/Owlet_Monster_Attack1_4.png" type="Texture" id=8]
 
@@ -417,7 +417,7 @@ shape = SubResource( 1 )
 [node name="DustRunRight" parent="." instance=ExtResource( 4 )]
 visible = false
 position = Vector2( -7, -1 )
-frame = 2
+frame = 5
 speed_scale = 1.5
 
 [node name="DustRunLeft" parent="." instance=ExtResource( 4 )]
@@ -425,7 +425,7 @@ visible = false
 position = Vector2( 8, 0 )
 rotation = -3.14159
 scale = Vector2( 1, -1 )
-frame = 0
+frame = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 playback_speed = 0.8

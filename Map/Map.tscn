@@ -4,7 +4,7 @@
 extents = Vector2( 5, 245 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 320, 10 )
+extents = Vector2( 320, 9.5 )
 
 [node name="Map" type="Node"]
 
@@ -21,15 +21,15 @@ position = Vector2( 645, 235 )
 shape = SubResource( 1 )
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
-position = Vector2( 10, 470 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 310, 0 )
-shape = SubResource( 2 )
+position = Vector2( 10, 649 )
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D3"]
 margin_left = -10.0
-margin_top = -10.0
+margin_top = -308.0
 margin_right = 629.0
-margin_bottom = 9.0
+margin_bottom = -289.0
 color = Color( 0.145098, 0.145098, 0.145098, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 310, -299 )
+shape = SubResource( 2 )

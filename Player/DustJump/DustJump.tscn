@@ -1,6 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player/hero-sprites/2 Owlet_Monster/Double_Jump_Dust_5.png" type="Texture" id=1]
+[ext_resource path="res://Player/DustJump/DustJump.gd" type="Script" id=2]
+[ext_resource path="res://Player/DustJump/DustJumpAnimatedSprite.gd" type="Script" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -35,9 +37,13 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="DustJump" type="AnimatedSprite"]
+[node name="DustJump" type="Node"]
+script = ExtResource( 2 )
+
+[node name="DustJumpAnimatedSprite" type="AnimatedSprite" parent="."]
+visible = false
 frames = SubResource( 6 )
 animation = "dust"
-frame = 1
+frame = 2
 speed_scale = 2.0
-playing = true
+script = ExtResource( 3 )
