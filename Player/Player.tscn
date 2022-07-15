@@ -16,6 +16,7 @@ extents = Vector2( 10.5, 13 )
 [sub_resource type="Animation" id=6]
 resource_name = "Jump"
 length = 0.8
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -74,7 +75,7 @@ tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.8 ]
+"values": [ 1.4 ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Sprite:hframes")
@@ -417,7 +418,7 @@ shape = SubResource( 1 )
 [node name="DustRunRight" parent="." instance=ExtResource( 4 )]
 visible = false
 position = Vector2( -7, -1 )
-frame = 5
+frame = 2
 speed_scale = 1.5
 
 [node name="DustRunLeft" parent="." instance=ExtResource( 4 )]
@@ -425,7 +426,7 @@ visible = false
 position = Vector2( 8, 0 )
 rotation = -3.14159
 scale = Vector2( 1, -1 )
-frame = 2
+frame = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 playback_speed = 0.8
